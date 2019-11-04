@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+   <Config version="3" updated="15-AUG-2019">
+      <!-- Core configurations, add additional as necessary-->
+      <SMTP value="smtp.yourdomain.org"/>
+      <FROM value="VMwareReports@yourdomain.org"/>
+      <FROM_TEST value="DEV.Reports@yourdomain.org"/>
+      <TO value="Alerts@yourdomain.org"/>
+      <TO_TEST value="you@yourdomain.org"/>
+      <ReportTitle value="vSphere DNS Checking"/>
+      <vCenterList value="D:\SomeFolder\vCenterList.csv"/>
+      <vCenterList_TEST value="C:\SomeFolder\vCenterList_SBX.csv"/>
+      <DevMode value="TRUE"/>
+      <DoReporting value="TRUE"/>
+      <SendMail value="TRUE"/>
+      <!-- Used for InfoBlox API strings -->
+      <WebURI value="https://ipam.yourdomain.org/wapi/v2.7.3/"/>
+      <aRecordSet value="record:a?_return_as_object=1"/>
+      <aRecordGet value="record:a?name="/>
+      <ptrRecordSet value="record:ptr?_return_as_object=1"/>
+      <ptrRecordGet value="record:ptr?ipv4addr="/>
+      <hostRecordSet value="record:host?_return_as_object=1"/>
+      <hostRecordGet value="record:host?_return_as_object=1&amp;name:="/>
+      <ipSearch value="ipv4address?ip_address="/>
+      <Networks value='network?_return_fields%2b=extattrs&amp;*Purpose~=VMware'/>
+      <view value="MSDNS-yourdomain.org"/>
+      <Login value="SomeServiceAccount"/>
+      <Hash value="0100000d08c9ddf0115d1118c7a00c04fc297eb01000000cd0583c9e751cb449999c76b7440de1000000002000000000003660000c000000010000000a89a78af31b32a9ef3c22ef7ba46cac000000000480000a000000010000000aadeb120c3c053094c2fa6497e60aba20000000915a09f9f38ebb5e7ea8d0849d2026d429860c6ce2d3445c82185df159c65914000006f4c35efbd6845b1acef3477aebe49de0766dcd7"/>
+      <!-- Used for storing CSS formats -->
+      <TableFormats>
+      	<Blue value="&lt;style type=&quot;text/css&quot;&gt;body{font-family:calibri;font-size:10pt;font-weight:normal;color:black;}th{text-align:center; text-shadow: 1px 1px black; background-color:#00417c; color:#FFFFFF; font-weight:bold; font-size:12px;}td{background-color:#F5F5F5; font-weight:normal; font-size:10px; padding: 3px 10px 3px 10px;}&lt;/style&gt;"/>
+      	<Red value="&lt;style type=&quot;text/css&quot;&gt;body{font-family:calibri;font-size:10pt;font-weight:normal;color:black;}th{text-align:center; text-shadow: 1px 1px black; background-color:#800000; color:#FFFFFF; font-weight:bold; font-size:12px;}td{background-color:#F5F5F5; font-weight:normal; font-size:10px; padding: 3px 10px 3px 10px;}&lt;/style&gt;"/>
+      	<Green value="&lt;style type=&quot;text/css&quot;&gt;body{font-family:calibri;font-size:10pt;font-weight:normal;color:black;}th{text-align:center; text-shadow: 1px 1px black; background-color:#006600; color:#FFFFFF; font-weight:bold; font-size:12px;}td{background-color:#F5F5F5; font-weight:normal; font-size:10px; padding: 3px 10px 3px 10px;}&lt;/style&gt;"/>
+      	<Purple value="&lt;style type=&quot;text/css&quot;&gt;body{font-family:calibri;font-size:10pt;font-weight:normal;color:black;}th{text-align:center; text-shadow: 1px 1px black; background-color:#400080; color:#FFFFFF; font-weight:bold; font-size:12px;}td{background-color:#F5F5F5; font-weight:normal; font-size:10px; padding: 3px 10px 3px 10px;}&lt;/style&gt;"/>
+      </TableFormats>
+   </Config>
+   <!-- Section for listing local or remote report output folders-->
+   <ReportFiles>
+      <ReportFile ReportFileType="SQL" ReportFileName="\\SomeServer\SomeFolder"/>
+   </ReportFiles>
+</Data>
